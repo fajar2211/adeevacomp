@@ -6,3 +6,4 @@
 12/04/2020
 - penambahan floating wa
 - upload ke github
+- lightbox slideshow image
