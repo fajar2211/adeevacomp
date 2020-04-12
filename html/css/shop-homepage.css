@@ -1,0 +1,101 @@
+/*!
+ * Start Bootstrap - Shop Homepage (https://startbootstrap.com/template-overviews/shop-homepage)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-shop-homepage/blob/master/LICENSE)
+ */
+body {
+  padding-top: 56px;
+}
+
+/*tambahan */
+
+.list-group a.list-group-item:hover {
+    background-color: #494949;
+  color: white;
+}
+
+/* search */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style the search field */
+form.search input[type=text] {
+  padding: 5px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.search button {
+  float: left;
+  width: 20%;
+  padding: 5px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.search button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.search::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*tambahan*/
+/*@media screen and (max-width: 1080px) {
+    
+    .container {
+        width: 100%;
+    }
+    .left {
+        width: 25%;
+        background-color: #89d0ff;
+    }
+    .middle {
+        width: 68%;
+        float: right;
+    }
+    
+    .right {
+        clear: both;
+        padding: 1% 4%;
+        width: auto;
+        float: none;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    
+    .header, 
+    .footer{
+        text-align: center;
+    }
+    .left {
+        width: auto;
+        float: none;
+    }
+    
+    .middle {
+        width: auto;
+        float: none;
+    }
+    
+    .right {
+        width: auto;
+        float: none;
+    }
+
+}*/
