@@ -95,19 +95,19 @@
                                 <!--<div class="row col-md-12 col-sm-12">-->
                                 <div class="column col-md-2 my-2 mb-3">
                                     <!--<div class="card-body row col-lg-2 col-md-2 col-sm-2 my-3">-->
-                                    <img height="75" weight="75" class="card-img" src="<?php echo base_url('upload/product/') . $row->image1 ?>" alt="" onclick="myFunction(this);">
+                                    <img height="75" weight="75" class="card-img" src="<?php echo base_url('upload/product/') . $row->image1 ?>" alt="" onclick="myFunction(this);currentSlide(1)">
                                 </div>
                                 <div class="column col-md-2 my-2 mb-3">
-                                    <img height="75" weight="75" class="card-img" src="<?php echo base_url('upload/product/') . $row->image2 ?>" alt="" onclick="myFunction(this);">
+                                    <img height="75" weight="75" class="card-img" src="<?php echo base_url('upload/product/') . $row->image2 ?>" alt="" onclick="myFunction(this);currentSlide(2)">
                                 </div>
                                 <div class="column col-md-2 my-2 mb-3">
-                                    <img height="75" weight="75" class="card-img" src="<?php echo base_url('upload/product/') . $row->image3 ?>" alt="" onclick="myFunction(this);">
+                                    <img height="75" weight="75" class="card-img" src="<?php echo base_url('upload/product/') . $row->image3 ?>" alt="" onclick="myFunction(this);currentSlide(3)">
                                 </div>
                                 <div class="column col-md-2 my-2 mb-3">
-                                    <img height="75" weight="75" class="card-img" src="<?php echo base_url('upload/product/') . $row->image4 ?>" alt="" onclick="myFunction(this);">
+                                    <img height="75" weight="75" class="card-img" src="<?php echo base_url('upload/product/') . $row->image4 ?>" alt="" onclick="myFunction(this);currentSlide(4)">
                                 </div>
                                 <div class="column col-md-2 my-2 mb-3">
-                                    <img height="75" weight="75" class="card-img" src="<?php echo base_url('upload/product/') . $row->image5 ?>" alt="" onclick="myFunction(this);">
+                                    <img height="75" weight="75" class="card-img" src="<?php echo base_url('upload/product/') . $row->image5 ?>" alt="" onclick="myFunction(this);currentSlide(5)">
                                 </div>
 
 
@@ -190,7 +190,7 @@
 
             // Get the image and insert it inside the modal - use its "alt" text as a caption
             var img = document.getElementById("expandedImg");
-            var modalImg = document.getElementById("img01");
+//            var modalImg = document.getElementById("img01");
 //            var captionText = document.getElementById("caption");
             img.onclick = function () {
                 modal.style.display = "block";
@@ -204,6 +204,38 @@
             // When the user clicks on <span> (x), close the modal
             span.onclick = function () {
                 modal.style.display = "none";
+            }
+            
+//            tambahan
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            // Next/previous controls
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("demo");
+              var captionText = document.getElementById("caption");
+              if (n > slides.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";
+              dots[slideIndex-1].className += " active";
+              captionText.innerHTML = dots[slideIndex-1].alt;
             }
         </script>
 
