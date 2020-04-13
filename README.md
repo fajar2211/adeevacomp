@@ -14,3 +14,4 @@
 - perbaikan video
 - perbaikan pagination
 - perbaikan floating wa base url js
+- perbaikan carousel js
