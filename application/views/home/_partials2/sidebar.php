@@ -11,8 +11,8 @@
         </div>
     <?php endforeach; ?>
     
-    <div class="card">
-        <video width="250" autoplay loop muted>
+    <div>
+        <video style="width:100%;" autoplay loop muted>
             <source src="<?php echo base_url('/upload/carousel/video1.mp4') ?>" type="video/mp4"/>
         </video>
 <!--        <div class="embed-responsive embed-responsive-1by1">

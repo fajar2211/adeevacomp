@@ -50,7 +50,7 @@ $(function () {
 //    message: 'Message To Send',
     headerTitle: 'Selamat datang!',
     position: "right",
-    size:"50px",
+    size:"60px",
     autoOpenTimer: 0,
     buttonImage: '<img src="html/floating-wa/whatsapp.svg" />'
     });

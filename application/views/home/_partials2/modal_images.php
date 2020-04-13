@@ -1,16 +1,18 @@
 <!-- The Modal -->
 <div id="myModal" class="modal">
-
+    
   <!-- The Close Button -->
   <span class="close">&times;</span>
 
   <!-- Modal Content (The Image) -->
-  <img class="modal-content">
+  <!--<div class="modal-content" id="img1">-->
 
   <!-- Modal Caption (Image Text) -->
   <!--<div id="caption"></div>-->
+  
   <?php foreach ($detail as $row) : ?>
   <!--tambahan-->
+  <!-- Full-width images with number text -->
   <div class="mySlides">
     <!--<div class="numbertext">1 / 6</div>-->
       <img src="<?php echo base_url('upload/product/') . $row->image1 ?>" style="width:25%;height:25%;">
@@ -36,8 +38,10 @@
       <img src="<?php echo base_url('upload/product/') . $row->image5 ?>" style="width:25%;height:25%;">
   </div>
   
+  <!-- Next and previous buttons -->
   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
   
   <?php endforeach; ?>
+
 </div>

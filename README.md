@@ -7,3 +7,8 @@
 - penambahan floating wa
 - upload ke github
 - lightbox slideshow image
+
+13/04/2020
+- perbaikan lightbox slideshow image
+- perbaikan size floating wa
+- perbaikan video
