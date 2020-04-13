@@ -34,10 +34,11 @@ class Home extends CI_Controller {
 
         $config['base_url'] = site_url('home/index');
         $config['total_rows'] = $jumlah_data;
-        $config['per_page'] = 60;
+        $config['per_page'] = 30;
         $config['uri_segment'] = 3;  // uri parameter
-        $choice = $config['total_rows'] / $config['per_page'];
-        $config['num_links'] = floor($choice);
+        $config['num_links'] = 4;
+//        $choice = $config['total_rows'] / $config['per_page'];
+//        $config['num_links'] = floor($choice);
 
         $config['first_link'] = 'First';
         $config['last_link'] = 'Last';

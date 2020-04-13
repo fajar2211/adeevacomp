@@ -12,3 +12,4 @@
 - perbaikan lightbox slideshow image
 - perbaikan size floating wa
 - perbaikan video
+- perbaikan pagination
