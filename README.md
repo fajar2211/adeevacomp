@@ -13,3 +13,4 @@
 - perbaikan size floating wa
 - perbaikan video
 - perbaikan pagination
+- perbaikan floating wa base url js

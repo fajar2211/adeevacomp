@@ -1,13 +1,13 @@
-<script src="<?php echo base_url('html/assets/jquery/jquery.min.js') ?>"></script>
+<!--<script src="<?php echo base_url('html/assets/jquery/jquery.min.js') ?>"></script>-->
 <script src="<?php echo base_url('html/assets/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
 
 <!--        <style>
             body {
             font-family: Arial, Helvetica, sans-serif;
-          }</style>
+          }</style>-->
 
-        tambahan
-        <div id="WAButton">
+        <!--tambahan-->
+<!--        <div id="WAButton">
         </div>
         Jquery
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -38,8 +38,8 @@
 <div class="floating-wpp"></div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"> </script>
-<link rel="stylesheet" href="html/floating-wa/floating-wpp.min.css">
-<script type="text/javascript" src="html/floating-wa/floating-wpp.min.js"></script>
+<link rel="stylesheet" type="text/css" href="<?php echo base_url('html/floating-wa/floating-wpp.min.css') ?>">
+<script type="text/javascript" src="<?php echo base_url('html/floating-wa/floating-wpp.min.js') ?>"></script>
 
 <script type="text/javascript">
 $(function () {
@@ -52,7 +52,7 @@ $(function () {
     position: "right",
     size:"60px",
     autoOpenTimer: 0,
-    buttonImage: '<img src="html/floating-wa/whatsapp.svg" />'
+    buttonImage: '<img src="<?php echo base_url('html/floating-wa/whatsapp.svg') ?>" />'
     });
 });
 </script>
