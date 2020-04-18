@@ -15,3 +15,6 @@
 - perbaikan pagination
 - perbaikan floating wa base url js
 - perbaikan carousel js
+
+18/04/2020
+- update gambar produk
