@@ -18,3 +18,10 @@
 
 18/04/2020
 - update gambar produk
+
+19/04/2020
+- update gambar produk yang belum tampil
+- update aktif false untuk tidak ada gambar
+
+21/12/2020
+- script sql database
