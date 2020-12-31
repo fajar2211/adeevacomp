@@ -31,5 +31,7 @@ user_guide_src/cilexer/pycilexer.egg-info/*
 /tests/results/
 /nbproject/*
 /user_guide/*
-/upload/product/*
-/upload/captcha/*
+upload/product/*
+!upload/product/default.jpg
+!upload/product/format.xlsx
+upload/captcha/*
